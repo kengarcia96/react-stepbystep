@@ -1,13 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Number from './components/Number';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {number: 0};
-  }
-
   render() {
     return (
       <div className="App">
@@ -16,11 +12,7 @@ class App extends React.Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <button onClick={() => { this.setState({number : this.state.number+2}) }}>
-          Hello World!
-          </button>
-
-          <p>number: {this.state.number}</p>
+          <Number/>
         </header>
       </div>
     );
